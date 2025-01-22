@@ -8,7 +8,7 @@ const projectsData = [
         techStack: "Python, Flask, SQL, K-Nearest Neighbor Algorithm",
         features: "Pengumpulan Data, Analisis Data, Rekomendasi, Penyebaran Informasi",
         role: "Full-stack Developer - Bertanggung jawab untuk pengembangan frontend dan backend, serta integrasi algoritma.",
-        demoLink: "#", // Update with the actual demo link if available
+        demoLink: "floodcast.html", // Update with the actual demo link if available
         githubLink: "#" // Update with the actual GitHub link if available
     },
     {
