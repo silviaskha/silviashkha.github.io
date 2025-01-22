@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Behavior Analysis</title>
+    <link rel="stylesheet" href="/Portofolio/Customer-Behaviour/css/style.css">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,500&family=Lora&family=Playpen+Sans:wght@300&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+    
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light px-2">
+        <div class="container-fluid">
+      <a class="navbar-brand text-secondary fw-medium" href="#">Customer Behavior Analysis</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" href="#intro">Introduction</a></li>
+                <li class="nav-item"><a class="nav-link" href="#visuals">Visualizations</a></li>
+                <li class="nav-item"><a class="nav-link" href="#conclusion">Conclusion</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About Me</a></li>
+            </ul>
+        </div>
+    </div>
+    </nav>
+
+    <!-- Hero Section -->
+     <header class="jumbotron text-center header-animation">
+          <div class="header-content">
+              <h1>Exploring Data Analysis &dash; Customer Behavior</h1>
+              <p>An analysis of customer data, uncovering key purchase patterns</p>
+              <div class="pt-3 d-flex justify-content-center align-items-center">
+                <a href="#intro" class="btn btn-primary">View Analysis</a>
+                <a href="#" id="download-btn" class="btn btn-secondary ml-2">Download Dataset</a>
+            </div>
+           </div>
+     </header>
+
+    <!-- Introduction Section -->
+    <section id="intro" class="container my-5">
+        <div class="row">
+            <div class="col-md-4">
+                <img src="/Portofolio/Customer-Behaviour/assets/customer.jpg" alt="Customer Image" class="img-fluid rounded" >
+            </div>
+              <div class="col-md-8">
+                   <p class="fw-light blockquote text-justify">
+                     This project delves into a dataset of 400 customer observations, analyzing 5 key characteristics to understand purchase behavior. The dataset includes attributes like ID, Gender, Age, EstimatedSalary, and whether a purchase was made (Purchased).
+                   </p>
+                   <h4>About the Dataset</h4>
+                       <ul>
+                          <li><b>Source:</b> Kaggle</li>
+                          <li><b>Observations:</b> 400</li>
+                          <li><b>Features:</b> ID, Gender, Age, EstimatedSalary, Purchased</li>
+                          <li><b>Attribute Type:</b> Categorical and Integer</li>
+                       </ul>
+                   <h4>Analysis Goals</h4>
+                       <p>The primary goal of this exploratory analysis is to uncover underlying patterns and relationships between the customer features and their purchasing decisions. We aim to identify trends, distributions, and correlations that can provide insights into customer behavior.</p>
+              </div>
+        </div>
+     </section>
+
+     <!-- Visualizations Section -->
+    <section id="visuals" class="container my-5">
+        <h2>Visualizations</h2>
+           <p>
+              The following visualizations explore the distribution of different features in the dataset.
+          </p>
+         <div class="row">
+           <div class="col-md-6">
+                <h4>Age Distribution</h4>
+                 <img src="/Portofolio/Customer-Behaviour/assets/age_distribution.png" class="img-fluid rounded" alt="Age Distribution">
+                <p class="mt-2">
+                  This histogram displays the distribution of customer ages. The Kernel Density Estimation (KDE) overlaid provides a smooth curve representing the underlying distribution.
+                </p>
+                <div class="analysis-details">
+                    <p>
+                     <b> Analysis :</b> The majority of the customer base falls within the range of 20 to 50 years old, with a notable peak around the late 30s. There is also significant count of customers between 40 to 50 years.
+                    </p>
+              </div>
+            </div>
+
+             <div class="col-md-6">
+                <h4>Salary Distribution</h4>
+                <img src="/Portofolio/Customer-Behaviour/assets/salary_distribution.png" class="img-fluid rounded" alt="Salary Distribution">
+                 <p class="mt-2">
+                     This histogram showcases the distribution of estimated salaries among our customer base, also with a KDE to depict the distribution.
+                </p>
+                   <div class="analysis-details">
+                       <p><b> Analysis :</b> The estimated salaries range from 15,000 to 150,000. The customer base has a wide salary range, but the KDE show a concentration around 70,000 to 80,000. However there is a significant number of customer between 30,000 to 50,000</p>
+                   </div>
+            </div>
+         </div>
+         <br>
+           <div class="row">
+                <div class="col-md-6">
+                     <h4>Gender Distribution</h4>
+                    <img src="/Portofolio/Customer-Behaviour/assets/gender_distribution.png" class="img-fluid rounded" alt="Gender Distribution">
+                     <p class="mt-2">
+                    This bar chart shows the distribution of male and female customers in our dataset.
+                     </p>
+                     <div class="analysis-details">
+                      <p>
+                         <b> Analysis :</b> The bar plot representing Gender Distribution indicates a fairly even distribution between Male and Female customers with a slight preference towards female
+                       </p>
+                     </div>
+                </div>
+                <div class="col-md-6">
+                    <h4>Age vs Purchased</h4>
+                    <img src="/Portofolio/Customer-Behaviour/assets/Age_Purchased.png" class="img-fluid rounded" alt="Scatter Plot Age vs Purchased">
+                     <p class="mt-2">
+                        This scatter plot displays the relationship between age, estimated salary, and purchase decisions, using color to differentiate customers who purchased or did not purchase the product, also differentiating between gender using different shapes
+                    </p>
+                  <div class="analysis-details">
+                     <p>
+                        <b>Analysis :</b> Customers who did not purchase are generally located in the lower estimated salary and age range. It also shows a higher tendency to purchase in the age range of 30-50 with salary higher that 80k. Gender also seems to play a role, with females more likely to purchase.
+                     </p>
+                 </div>
+                </div>
+            </div>
+    </section>  
+
+    <!-- Conclusion Section -->
+    <section id="conclusion" class="container my-5">
+        <h2>Conclusion</h2>
+        <p>
+            Through our exploratory data analysis, we found that various attributes of our customers, like age, estimated salary, and gender provide insights into whether a purchase will occur.
+        </p>
+        <h4>Key Insights:</h4>
+        <ul>
+            <li> <b>Age Distribution:</b> The majority of our customers are aged between 20 and 50, with the late 30's being a peak.</li>
+            <li> <b>Gender Distribution:</b> The number of male and female customers are fairly even with a slight preference to female.</li>
+            <li><b>Estimated Salary Distribution:</b> The customer base has wide salary range, with a concentration around 70,000 to 80,000, with a significant number of customer between 30,000 to 50,000.</li>
+            <li><b>Age vs Purchased:</b> Customers who did not purchase are generally located in the lower estimated salary and age range. It also shows a higher tendency to purchase in the age range of 30-50 with salary higher that 80k. Gender also seems to play a role, with females more likely to purchase.</li>
+         </ul>
+          <h4>Implications:</h4>
+            <p>These findings are useful for understanding customer behavior and could inform future marketing 
+                and product targeting strategies. Further analysis and machine learning could provide 
+                more precise predictions and business insights.</p>
+     </section>
+
+   <!-- About Me Section -->
+  <section id="about" class="container my-0">
+      <h2>About Me</h2>
+        <div class="row">
+            <div class="col-md-2 col-sm-3 col-3">
+                <img src="/Portofolio/Customer-Behaviour/assets/my-profile.jpg" alt="Your Profile Picture" class="img-fluid rounded-circle">
+            </div>
+              <div class="col-md-10 col-sm-9 col-9">
+                  <p >
+                    I'm a tech enthusiast with passion in full-stack development, IoT, machine learning, and cloud computing.
+                    <br>
+                    I enjoy applying analytical skills to solve real-world problems and am always eager to learn new tools and techniques in the field of data science.
+                   </p>
+              <h4 class="text-info-emphasis">Get in touch</h4>
+              <div class="d-flex flex-wrap">
+                <div class="p-2">
+                    <a href="https://www.linkedin.com/in/silviashkha" target="_blank">
+                        <i class="fab fa-linkedin"></i> LinkedIn
+                    </a>
+                </div>
+                <div class="p-2">
+                    <a href="mailto:silviask1605@gmail.com">
+                        <i class="fas fa-envelope"></i> Email
+                    </a>
+                </div>
+                <div class="p-2">
+                    <a href="https://github.com/silviaskha" target="_blank">
+                        <i class="fab fa-github"></i> GitHub
+                    </a>
+                </div>
+            </div>
+               
+
+            
+        </div>
+    </section>
+
+   <!-- Footer -->
+    <footer class="text-center text-light mt-5 py-3 bg-dark">
+        <p>© 2024 Silvia Sholikatul K. All Rights Reserved.</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
