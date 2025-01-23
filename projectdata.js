@@ -6,10 +6,10 @@ const projectsData = [
         fullDescription: "Sistem ini dirancang untuk mengelola informasi terkait bencana, termasuk pengumpulan data, analisis, dan penyebaran informasi kepada masyarakat. Menggunakan algoritma K-Nearest Neighbor untuk memberikan rekomendasi dan informasi yang relevan.",
         image: "img/BG-Project-1.jpg", // Update with the actual image path
         techStack: "Python, Flask, SQL, K-Nearest Neighbor Algorithm",
-        features: "Pengumpulan Data, Analisis Data, Rekomendasi, Penyebaran Informasi",
+        features: "Pemantauan dan Analisis Potensi Banjir, Riwayat Data Sensor, Simulasi Prediksi Banjir, Manajemen Sistem",
         role: "Full-stack Developer - Bertanggung jawab untuk pengembangan frontend dan backend, serta integrasi algoritma.",
-        demoLink: "floodcast.html", // Update with the actual demo link if available
-        githubLink: "#" // Update with the actual GitHub link if available
+        demoLink: "Portofolio/Floodcast/floodcast.html", // Update with the actual demo link if available
+        githubLink: "https://silviaskha.github.io/Portofolio/FLoodcast/floodcast.html" // Update with the actual GitHub link if available
     },
     {
         id: 2,
@@ -17,11 +17,11 @@ const projectsData = [
         shortDescription: "Website sistem informasi geografis untuk membantu tim SAR dalam pencarian orang hilang.",
         fullDescription: "Website ini dirancang untuk membantu tim SAR dalam mencari orang hilang di area hutan. Menggunakan peta interaktif dan data geografis untuk memberikan informasi yang akurat dan real-time.",
         image: "img/BG-Project-2.jpg", // Update with the actual image path
-        techStack: "HTML, CSS, JavaScript, Leaflet.js",
-        features: "Peta Interaktif, Pencarian Lokasi, Data Geografis, Informasi Real-time",
-        role: "Frontend Developer - Mengimplementasikan UI/UX design dan fitur peta interaktif.",
+        techStack: "Leaflet, JavaScript, Boostrap, MySQL",
+        features: "Peta Interaktif, Pencarian Lokasi, Real-time status updates, Data Korban, Riwayat Data Sensor",
+        role: "Full-stack Developer - Bertanggung jawab untuk pengembangan frontend dan backend, serta integrasi ke IoT Hardware",
         demoLink: "#", // Update with the actual demo link if available
-        githubLink: "#" // Update with the actual GitHub link if available
+        githubLink: "https://github.com/silviaskha/lostawaymonitoring" // Update with the actual GitHub link if available
     },
     {
         id: 3,
@@ -34,7 +34,20 @@ const projectsData = [
         role: "Administrator",
         demoLink: "#", // Update with the actual demo link if available
         githubLink: "#" // Update with the actual GitHub link if available
+    },
+    {
+        id: 4,
+        title: "Customer Behavior Analysis: An Exploratory Data Analysis Project",
+        shortDescription: "An exploration of customer behavior patterns using statistical analysis and data visualization techniques on a real world dataset",
+        fullDescription: "This project presents an in-depth exploratory data analysis (EDA) of a customer behavior dataset. The dataset contains 400 observations, each with 5 key attributes: ID, Gender, Age, Estimated Salary, and a purchase indicator ('Purchased'). The goal was to uncover actionable insights related to customer demographics and their purchase patterns through statistical and visual exploration.",
+        image: "/Portofolio/Customer-Behaviour/assets/customer.jpg", // Update with the actual image path
+        techStack: "Python, Pandas, NumPy, Matplotlib, Seaborn, HTML, CSS, JavaScript, Bootstrap",
+        features: "Interactive website providing explanations for each visualization, download button for dataset, overview of descriptive statistics.",
+        role: "Individual developer, data analyst, and data visualizer. I was responsible for the entire project from data loading and exploration to designing and developing the interactive web portfolio to display the key insights.",
+        demoLink: "https://silviaskha.github.io/Portofolio/Customer-Behaviour/customer-behaviour.html", // Update with the actual demo link if available
+        githubLink: "#" // Update with the actual GitHub link if available
     }
+
 ];
     
     // Modal functionality
